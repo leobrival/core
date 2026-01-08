@@ -1,0 +1,18 @@
+{
+	"name": "@topographic-studio/config",
+	"version": "0.0.1",
+	"description": "Shared configurations for Topographic Studio projects",
+	"main": "./index.js",
+	"files": ["biome.json", "tsconfig.base.json", "tsconfig.react.json", "index.js"],
+	"keywords": ["config", "biome", "typescript"],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leobrival/core.git",
+		"directory": "packages/config"
+	},
+	"peerDependencies": {
+		"@biomejs/biome": ">=2.0.0",
+		"typescript": ">=5.0.0"
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"name": "@topographic-studio/utils",
+	"version": "0.0.1",
+	"description": "Utility functions and helpers for Topographic Studio projects",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"typecheck": "tsc --noEmit",
+		"test": "bun test"
+	},
+	"keywords": [
+		"utils",
+		"helpers",
+		"utilities"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leobrival/core.git",
+		"directory": "packages/utils"
+	},
+	"devDependencies": {
+		"tsup": "^8.3.5",
+		"typescript": "^5.7.2"
+	}
+}
